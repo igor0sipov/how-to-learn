@@ -1,3 +1,8 @@
+h1,p {
+  margin: 0;
+  padding: 0;
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -14,6 +19,69 @@
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
+  background-color: #f2f2f2;
+  display: flex;
+  position:relative;
+}
+.logo {
+  background-image: url(../images/logo_place_header.svg);
+  background-size: cover;
+  width: 183px;
+  height: 32px;
+  position: absolute;
+}
+
+.logo_place_header {
+  top: 30px;
+  left: 64px;
+}
+
+.header__title {
+  width: 730px;
+  font-size: 102px;
+  font-weight: bold;
+  line-height: 96px;
+  display: flex;
+  align-items: center;
+  margin-left: 64px;
+  z-index: 2;
+}
+
+.header__subtitle {
+  width: 388px;
+  position: absolute;
+  left: 64px;
+  bottom: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 25px;
+  z-index: 2;
+}
+
+.header__link {
+  text-decoration: none;
+  color: #2f80ed;
+}
+
+.main-illustration {
+ /* background-image: url(/how-to-learn/images/header-image.png); */
+ background-image: url(../images/header-image.png);
+ background-size: cover;
+ width: 765px;
+ height: 608px;
+ display:flex;
+ position: absolute;
+ bottom: 0;
+ right: 0;
+}
+
+.square-pic {
+width: 568px;
+height: 568px;
+background: #2f80ed;
+position: absolute;
+top: 64px;
+right: 0;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
