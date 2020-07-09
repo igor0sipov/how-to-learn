@@ -4,17 +4,33 @@
   outline-color: red;
 }
 
-h1,p,section {
+h1,h2,h3,p,section {
   margin: 0;
   padding: 0;
 }
 
-.bottom-margin {
+.top-gap_size_xl {
+  margin-top: 100px;
+}
+
+.bottom-gap_size_xl {
   margin-bottom: 100px;
 }
 
-.top-margin {
-  margin-top: 100px;
+.top-gap_size_l {
+  margin-top: 90px;
+}
+
+.bottom-gap_size_l {
+  margin-bottom: 90px;
+}
+
+.top-gap_size_m {
+  margin-top: 60px;
+}
+
+.top-gap_size_s {
+  margin-top: 20px;
 }
 
 .page {
@@ -25,7 +41,7 @@ h1,p,section {
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Helvetica Neue Cyr', 'Arial', sans-serif;
 }
 
 /* ----------------------header */
@@ -80,7 +96,6 @@ h1,p,section {
 }
 
 .main-illustration {
- /* background-image: url(/how-to-learn/images/header-image.png); */
   background-image: url(../images/header-image.png);
   background-size: cover;
   width: 765px;
@@ -166,4 +181,52 @@ h1,p,section {
   font-size: 24px;
   line-height: 34px;
   font-weight: bold;
+}
+
+/* ----------------------digits */
+
+.digits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title {
+  width: 60%;
+  text-align: center;
+  line-height: 69px;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.section-subtitle {
+  width: 60%;
+  text-align: center;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.table {
+  width: 1100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.table__cell {
+  width: 250px;
+}
+
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
 }
