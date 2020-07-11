@@ -1,10 +1,4 @@
-/* * {
-  outline-width: 1px;
-  outline-style: solid;
-  outline-color: red;
-} */
-
-h1,h2,h3,p,section,img {
+p {
   margin: 0;
   padding: 0;
 }
@@ -17,7 +11,7 @@ h1,h2,h3,p,section,img {
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue Cyr', 'Arial', sans-serif;
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
 }
 
 /* ----------------------header */
@@ -37,6 +31,7 @@ h1,h2,h3,p,section,img {
   background-size: cover;
   width: 183px;
   height: 32px;
+  z-index: 3;
 }
 
 .logo_place_header {
@@ -47,10 +42,11 @@ h1,h2,h3,p,section,img {
 
 .header__title {
   width: 730px;
+  line-height: 96px;
   font-size: 102px;
   font-weight: bold;
-  line-height: 96px;
-  margin-left: 64px;
+  margin: 0 0 0 64px;
+  padding: 0;
   z-index: 2;
 }
 
@@ -59,10 +55,12 @@ h1,h2,h3,p,section,img {
   position: absolute;
   left: 64px;
   bottom: 30px;
+  line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  line-height: 25px;
   z-index: 2;
+  margin: 0;
+  padding: 0;
 }
 
 .header__link {
@@ -122,6 +120,8 @@ h1,h2,h3,p,section,img {
   font-weight: normal;
   line-height: 1.2;
   color: #2f80ed;
+  margin: 0;
+  padding: 0;
 }
 
 .two-columns__main-text {
@@ -137,6 +137,8 @@ h1,h2,h3,p,section,img {
   font-size: 24px;
   line-height: 34px;
   font-weight: normal;
+  margin: 0;
+  padding: 0;
 }
 
 .two-columns__paragraph:nth-of-type(2) {
@@ -155,6 +157,7 @@ h1,h2,h3,p,section,img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
   padding: 100px 0;
 }
 
@@ -164,6 +167,8 @@ h1,h2,h3,p,section,img {
   line-height: 69px;
   font-size: 60px;
   font-weight: bold;
+  margin: 0;
+  padding: 0;
 }
 
 .section-subtitle {
@@ -172,7 +177,8 @@ h1,h2,h3,p,section,img {
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  margin-top: 20px;
+  margin: 20px 0 0 0;
+  padding: 0;
 }
 
 .table {
@@ -192,13 +198,16 @@ h1,h2,h3,p,section,img {
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
+  margin: 0;
+  padding: 0;
 }
 
 .table__text {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  margin-top: 20px;
+  margin: 20px 0 0 0;
+  padding: 0;
 }
 
 /* ----------------------feynman */
@@ -212,6 +221,7 @@ h1,h2,h3,p,section,img {
   background-size: 867px 637px;
   background-repeat: no-repeat;
   background-position: bottom left;
+  box-sizing: border-box;
   padding-top: 100px;
   position: relative;
   min-height: 790px;
@@ -222,10 +232,13 @@ h1,h2,h3,p,section,img {
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
+  margin: 0;
+  padding: 0;
 }
 
 .feynman__subtitle {
-  margin-top: 70px;
+  margin: 70px 0 0 0;
+  padding: 0;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -251,6 +264,7 @@ h1,h2,h3,p,section,img {
   align-items: center;
   justify-content: center;
   position: relative;
+  box-sizing: border-box;
   padding: 90px 0;
   z-index: 1;
   overflow: hidden;
@@ -307,7 +321,7 @@ h1,h2,h3,p,section,img {
   z-index: -1;
 }
 
-/* ----------------------kaufman */
+/* ----------------------footer */
 
 .footer {
   display: flex;
@@ -328,13 +342,13 @@ h1,h2,h3,p,section,img {
 
 }
 
-.column {
+.footer__column {
   display: flex;
   flex-direction: column;
 
 }
 
-.column_content_copyright {
+.footer__column_content_copyright {
   position: relative;
   flex-basis: 711px;
   justify-content: space-between;
@@ -348,18 +362,31 @@ h1,h2,h3,p,section,img {
   height: 35px;
 }
 
-
 .footer__author {
   margin: 18px 0;
+  padding: 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
 }
 
+.footer__column_content_info {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column_content_social {
+  display: flex;
+  flex-direction: column;
+}
+
+
 .footer__column-heading {
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
+  margin: 0;
+  padding: 0;
 }
 
 .footer__column-links {
@@ -382,5 +409,5 @@ font-weight: bold;
 .footer__social-icon {
   width: 16px;
   height: 16px;
-  margin-right: 10px ;
+  margin-right: 10px;
 }
