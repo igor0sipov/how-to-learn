@@ -143,7 +143,7 @@
 
 .two-columns__paragraph:last-child {
   margin: 0;
- } /* edited */
+} /* edited */
 
 .two-columns__span-accent {
   font-size: 24px;
@@ -262,7 +262,6 @@
   background-size: 100% 0px;
   transition: background-size .5s,  color  .5s;
   transition-timing-function: ease-in-out;
-
 }
 
 .feynman__link:hover {
@@ -405,9 +404,10 @@
 }
 
 .footer__column-links {
-padding: 0;
-margin: 20px 0 16px;
-align-items: flex-start;
+  padding: 0; /* edited */
+  margin: 20px 0 16px;
+  align-items: flex-start;
+  list-style-type: none;
 }
 
 .footer__column-link {

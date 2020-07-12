@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
- <link rel="stylesheet" href="./styles/normalize.css">   <!-- edited -->
+  <link rel="stylesheet" href="./styles/normalize.css">   <!-- edited -->
   <link rel="stylesheet" href="./styles/style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +18,7 @@
         <a href="#" class="header__link">Узнать?→</a>
       </p> <!-- edited -->
       <div class="header__square-pic"></div>
-        <img class="header__main-illustration" src="./images/header-image.png" alt="Грустный мальчик с картины 'Опять двойка'" > <!-- edited -->
+      <img class="header__main-illustration" src="./images/header-image.png" alt="Грустный мальчик с картины 'Опять двойка'" > <!-- edited --><!-- tab edited -->
     </header>
 
     <main class="content">
@@ -152,24 +152,34 @@
         </div>
         <div class="footer__column footer__column_content_info">
           <h3 class="footer__column-heading">О практикуме</h3>
-          <nav class="footer__column-links"> <!-- edited -->
-            <a class="footer__column-link" href="#">Главная</a>
-            <a class="footer__column-link" href="#">Концепция</a>
-            <a class="footer__column-link" href="#">Наставники</a>
+          <nav> <!-- edited -->
+            <ul class="footer__column-links"> <!-- edited ul added back-->
+              <li><a class="footer__column-link" href="#">Главная</a></li>
+              <li><a class="footer__column-link" href="#">Концепция</a></li>
+              <li><a class="footer__column-link" href="#">Наставники</a></li>
+            </ul>
           </nav>
         </div>
         <div class="footer__column footer__column_content_social">
           <h3 class="footer__column-heading">Соцсети</h3>
-          <nav class="footer__column-links"> <!-- edited -->
-              <a class="footer__column-link" href="#">
-                <img class="footer__social-icon" src="./images/facebook_color_white.svg" alt="">Facebook
-              </a>
-              <a class="footer__column-link" href="#">
-                <img class="footer__social-icon" src="./images/vk_color_white.svg" alt="">ВКонтакте
-              </a>
-              <a class="footer__column-link" href="#">
-                <img class="footer__social-icon" src="./images/instagram_color_white.svg" alt="">Instagram
-              </a>
+          <nav> <!-- edited -->
+            <ul class="footer__column-links"> <!-- edited ul added back-->
+              <li>
+                <a class="footer__column-link" href="#">
+                  <img class="footer__social-icon" src="./images/facebook_color_white.svg" alt="Иконка facebook">Facebook
+                </a>
+              </li>
+              <li>
+                <a class="footer__column-link" href="#">
+                  <img class="footer__social-icon" src="./images/vk_color_white.svg" alt="Иконка ВКонтакте">ВКонтакте
+                </a>
+              </li>
+              <li>
+                <a class="footer__column-link" href="#">
+                  <img class="footer__social-icon" src="./images/instagram_color_white.svg" alt="Иконка Instagram">Instagram
+                </a>
+              </li>
+            </ul>
           </nav>
         </div>
       </div>
@@ -178,3 +188,12 @@
   </div>
 </body>
 </html>
+<!-- Комментарий для код-ревьювера Елизавета Пак.
+    При первой проверке вы посоветовали мне статью на хабре про alt-text "https://habr.com/ru/post/341810/".
+    Там, в пункте о том когда НЕ следует использовать alt-text, приводится пример о том,
+    что если рядом с иконкой стоит текстовое описание описание, то alt-text лучше не использовать, т.к.
+    тот же скринридер произнесет одно и то же дважды.
+    По причине рекомендации вами данной статьи был убрано содержимое атрибудта alt у иконок.
+    В следующий раз вы отмечаете это как ошибку. Это потому что в рамках данного проекта у всех alt должен быть текст?
+    Или в этом моменте автор статьи был неправ? Как в итоге делать корректнее?
+    Спасибо. -->
