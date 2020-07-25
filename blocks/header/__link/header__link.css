@@ -1,0 +1,15 @@
+.header__link {
+  text-decoration: none;
+  color: #2f80ed;
+  background-image: linear-gradient(#2f80ed, #2f80ed);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 0px;
+  transition: background-size .5s,  color  .5s;
+  transition-timing-function: ease-in-out;
+}
+
+.header__link:hover {
+  background-size: 100% 100%;
+  color: #f2f2f2;
+}

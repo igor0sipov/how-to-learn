@@ -1,0 +1,21 @@
+.feynman__link {
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  text-decoration: none;
+  color: black;
+  background-image: linear-gradient(black, black);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 0px;
+  transition: background-size .5s,  color  .5s;
+  transition-timing-function: ease-in-out;
+}
+
+.feynman__link:hover {
+  background-size: 100% 100%;
+  color: #f2f2f2;
+}
