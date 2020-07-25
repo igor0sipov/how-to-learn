@@ -9,10 +9,10 @@
 @import url(./__title/khan__title.css);
 
 .khan {
-display: flex;
-justify-content: center;
-align-items: center;
-background-color: #f2f2f2;
-box-sizing: border-box;
-padding-top: 105px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  padding-top: 105px;
 }
