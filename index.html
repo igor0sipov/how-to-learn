@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-  <link rel="stylesheet" href="./how-to-learn.css">
+  <link rel="stylesheet" href="./pages/index.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Научиться учиться</title>
@@ -92,13 +92,11 @@
         <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
         <div class="video__iframes">
           <iframe class="video__iframe"
-                  id="ytplayer-left"
                   src="https://www.youtube.com/embed/arj7oStGLkU"
                   allowfullscreen></iframe>
           <iframe class="video__iframe"
-                  id="ytplayer-right"
                   src="https://www.youtube.com/embed/5MgBikgcWnY"
-                  allowfullscreen></iframe>
+                  allowfullscreen></iframe> <!-- ids deleted -->
         </div>
       </section>
 
@@ -237,13 +235,28 @@
       <section class="resources">
         <h2 class="section-title">Полезные ресурсы</h2>
         <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения.</p>
-        <div class="resources__logo-zone">
-          <img src="./images_sprint-2/logo/resources-arzamas.svg" alt="Логотип ресурса 'Arzamas'"
-            class="resources__logo">
-          <img src="./images_sprint-2/logo/resources-n1.svg" alt="Логотип ресурса 'n+1'" class="resources__logo">
-          <img src="./images_sprint-2/logo/resources-strelka.svg" alt="Логотип ресурса 'STRELKA'" class="resources__logo">
-          <img src="./images_sprint-2/logo/resources-polka.svg" alt="Логотип ресурса 'ПОЛКА'" class="resources__logo">
-        </div>
+        <ul class="resources__logo-zone">
+          <li >
+            <a href="https://arzamas.academy/">
+              <img src="./images_sprint-2/logo/resources-arzamas.svg" alt="Логотип ресурса 'Arzamas'" class="resources__logo">
+            </a>
+          </li>
+          <li>
+            <a href="https://nplus1.ru/">
+              <img src="./images_sprint-2/logo/resources-n1.svg" alt="Логотип ресурса 'n+1'" class="resources__logo">
+            </a>
+          </li>
+          <li>
+            <a href="https://strelkamag.com/ru">
+              <img src="./images_sprint-2/logo/resources-strelka.svg" alt="Логотип ресурса 'STRELKA'" class="resources__logo">
+            </a>
+          </li>
+          <li>
+            <a href="https://polka.academy/">
+              <img src="./images_sprint-2/logo/resources-polka.svg" alt="Логотип ресурса 'ПОЛКА'" class="resources__logo">
+            </a>
+          </li>
+        </ul> <!--ul added-->
       </section>
 
     </main>

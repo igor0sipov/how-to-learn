@@ -4,4 +4,7 @@
   align-items: center;
   max-width: 1100px;
   margin: 80px 0 217px;
+  padding: 0;
+  list-style: none;
+  font-size: 0; /* размер шрифта немного ломал разметку и добавлял лишние 4px к высоте блока */
 }
